@@ -1,4 +1,4 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
-gazelle:prefix src//project
+#gazelle:prefix github.com/rguevara84/bzl-rick/src
 gazelle(name = "gazelle")
