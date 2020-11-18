@@ -5,7 +5,7 @@ go_library(
     srcs = ["hello.go"],
     importpath = "github.com/rguevara84/bzl-rick/src/hello",
     visibility = ["//visibility:private"],
-    deps = ["@com_github_rguevara84_stringutil//:go_default_library"],
+    deps = ["@com_github_rguevara84_stringutil//:stringutil"],
 )
 
 go_binary(

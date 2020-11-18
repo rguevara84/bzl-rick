@@ -19,7 +19,14 @@ http_archive(
 )
 
 load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_dependencies")
-load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies")
+load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies", "go_repository")
+
+go_repository(
+    name = "com_github_rguevara84_stringutil",
+    importpath = "github.com/rguevara84/stringutil",
+    sum = "h1:sEbUteLlkvYMuVfFx4t93P6tWZ8JdLJKr3XhjnuLQHQ=",
+    version = "v0.0.0-20201118204253-de3310977ec9",
+)
 
 go_rules_dependencies()
 
